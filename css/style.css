@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primaryfont:'Poppins', sans-serif;
+    --secondaryfont:'PT Sans', sans-serif;
+    --primarycolor: #FFCC00;
+    --secondarycolor:#353535;
+    
+}
+
+/* COMMON CSS START */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul , ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:var(--primaryfont);
+}
+
+.button{
+    padding:16px 45px;
+    display:inline-block;
+    border-radius: 20px;
+    background-color:var(--primarycolor);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%; /* 36px */
+
+}
+
+.button.outline{
+    background-color:transparent;
+    border: 1px solid #000;
+    color:var(--secondarycolor);
+    padding:16px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 180%; /* 36px */
+}
+/* COMMON CSS END */
+
+/* nav start */
+
+nav .navbar-toggler{
+    border:0;
+    box-shadow:none !important;
+}
+
+#menu ul li a{
+color:var(--secondarycolor);
+font-size: 15px;
+font-weight: 500;
+line-height: 200%;
+padding:18px 22px 5px;
+position: relative;
+}
+
+#menu ul li a::before{
+    content:'';
+    width:0%;
+    height:1px;
+    background-color:var(--secondarycolor);
+    position: absolute;
+    bottom: 0;
+    left:0;
+   
+}
+
+#menu ul li:hover a::before{
+    width:100%;
+    transition:0.5s;
+}
+
+/* nav end */
+
+/* banner start */
+
+#banner{
+    padding:72px 0px 144px;
+}
+
+#banner .bannercontent svg{
+    margin-left:38px;
+}
+
+#banner .bannercontent h4{
+color:var(--secondarycolor);
+font-size: 24px;
+font-weight: 400;
+
+}
+
+#banner .bannercontent h1{
+color:var(--secondarycolor);
+font-family:var(--secondaryfont);
+font-size: 64px;
+font-weight: 700;
+
+}
+
+#banner .bannercontent p{
+color:var(--secondarycolor);
+font-size: 20px;
+font-weight: 400;
+line-height: 180%; /* 36px */
+margin:25px 0px 45px;
+}
+
+#banner .bannercontent .button{
+    margin-right:40px;
+}
+
+#banner .bannercontent .button span{
+   margin-left:11px;
+
+}
+
+#banner .social{
+    margin-top:66px;
+}
+
+#banner .social h4{
+color:var(--secondarycolor);
+font-size: 22px;
+font-weight: 500;
+line-height: 180%; /* 39.6px */
+}
+
+#banner .social ul li{
+    display:inline-block;
+    margin-right:16px;
+}
+
+#banner .social ul li a{
+width: 40px;
+height: 40px;
+background-color:#F4F3F3; 
+display:inline-block;
+text-align: center;
+line-height:40px;
+border-radius:50%;
+color: #000;
+}
+
+/* banner end */
+
+/* about */
+
+#about{
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+
+#about .container{
+    position: relative;
+}
+
+#about .circle{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+#about .aboutcontent h4{
+color:var(--secondarycolor);
+font-family:var(--secondaryfont);
+font-size: 50px;
+font-weight: 700;
+
+}
+
+#about .aboutcontent p{
+color:var(--secondarycolor);
+font-size: 20px;
+font-weight: 400;
+line-height: 190%; /* 38px */
+margin:26px 0px 45px;
+
+}
+
+#about .aboutcontent a{
+color:var(--secondarycolor);
+font-size: 18px;
+font-weight: 500;
+line-height: 180%; /* 32.4px */
+padding:17px 43px;
+
+}
+
+
+/* about end */
+
+/* service */
+
+#service{
+    margin-top:151px;
+}
+
+#service .servicecard{
+    text-align: center;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+
+}
+
+#service .servicecard .serviceimg {
+    padding:39px 0px 18px;
+   
+   
+}
+
+#service .servicecard .servicetxt h4{
+color: var(--secondarycolor);
+font-size: 22px;
+font-weight: 600;
+line-height: 180%; /* 39.6px */
+}
+
+#service .servicecard .servicetxt p{
+color: #7A7A7A;
+font-size: 16px;
+font-weight: 400;
+line-height: 190%; /* 30.4px */
+padding:14px 0px 57px;
+}
+
+
+/* service end */
